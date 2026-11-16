@@ -21,7 +21,7 @@ jobs:
           python-version: "3.11"
       - name: Tools
         run: |
-          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q torch torchvision --index-url https://download.pytorch.org/whl/cpu
           pip install -q onnx onnxruntime onnxconverter-common einops timm numpy
       - name: Original weights
         run: |
